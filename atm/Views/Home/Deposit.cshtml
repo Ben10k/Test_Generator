@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Deposit";
+}
+@{
+    Layout = "_Layout";
+}
+<H1> Deposit </H1>
+<form asp-action="Deposit" method="post">
+    <input type="number" placeholder="Amount" name="amount" id="amount" autofocus/>
+
+    <input type="submit" id="submit" class="btn btn-success"/>
+</form>

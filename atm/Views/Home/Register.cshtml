@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+@{
+    Layout = "_Layout";
+}
+<H1> Registration </H1>
+<form asp-action="Register" method="post" style="text-align: center;">
+    <input type="text" placeholder="username" id="username" name="username" style="margin: 5px;" autofocus/>
+    <input type="email" placeholder="email" id="email" style="margin: 5px;" name="email"/>
+    <input type="password" placeholder="password" id="password" style="margin: 5px;" name="password"/>
+    <div style="display: inline-block">
+        <input type="submit" id="submit" class="btn btn-success" style="margin: 5px;"  value="Register"/>
+        <input type="reset" id="resetButton" style="margin: 5px;" value="Reset" />
+    </div>
+
+</form>

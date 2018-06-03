@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+@{
+    Layout = "_Layout";
+}
+
+<H1> Login </H1>
+<form asp-action="Login" method="post" style="text-align: center;">
+    <input type="text" placeholder="username" id="username" style="margin: 5px;" name="username" autofocus/>
+    <input type="password" placeholder="password" id="password" style="margin: 5px;" name="password"/>
+    <div style="display: inline-block; width: 100%">
+        <input type="submit" value="Login" id="login" style="; margin: 5px;" class="btn btn-success">
+    </div>
+
+</form>

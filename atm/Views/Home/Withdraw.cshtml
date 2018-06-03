@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Withdraw";
+}
+@{
+    Layout = "_Layout";
+}
+<h1> Widthdraw </h1>
+<form asp-action="Withdraw" method="post">
+    <input type="number" placeholder="Amount" id="amount" name="amount" autofocus/>
+
+    <input type="submit" id="submit" class="btn btn-success"/>
+</form>

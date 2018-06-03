@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;net462</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>DataStorageLibrary</AssemblyName>
+    <RootNamespace>DataStorageLibrary</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="QuickGraphPCL" Version="3.6.61114.2" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+@{
+    Layout = "_Layout";
+}
+
+<p id="balance">@ViewBag.message</p>
+<input type="button" id="menu" value="Menu" onclick="location.href = '@Url.Action("Menu", "Home")'"/>

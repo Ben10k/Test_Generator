@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Check";
+}
+@{
+    Layout = "_Layout";
+}
+
+<h1> Balance </h1>
+<p id="balance">$ @ViewBag.Balance </p>
+<input type="button" value="Menu" id="menu" onclick="location.href = '@Url.Action("Menu")'"/>

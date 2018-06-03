@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Menu";
+}
+@{
+    Layout = "_Layout";
+}
+<H1> Menu </H1>
+<input type="button" id="deposit" value="Deposit" onclick="location.href = '@Url.Action("Deposit")'"/>
+<input type="button" id="withdraw" value="Withdraw" onclick="location.href = '@Url.Action("Withdraw")'"/>
+<input type="button" id="check" value="Check" onclick="location.href = '@Url.Action("Check")'"/>
+<input type="button" id="logout" value="Logout" onclick="location.href = '@Url.Action("Logout")'"/>

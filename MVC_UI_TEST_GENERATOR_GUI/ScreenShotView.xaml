@@ -1,0 +1,40 @@
+﻿<Window x:Class="MVC_UI_TEST_GENERATOR_GUI.ScreenShotView"
+        x:Name="ScreenShotViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:panAndZoom="clr-namespace:MVC_UI_TEST_GENERATOR_GUI.PanAndZoom"
+        mc:Ignorable="d"
+        Title="ScreenShotView" Height="450" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch" Width="Auto">
+            <TabItem Header="Initial" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch"
+                     Width="Auto">
+                <Grid Background="#FFE5E5E5">
+                    <panAndZoom:ZoomBorder ClipToBounds="True" Background="Gray">
+                        <Image x:Name="LabasRytas" Margin="0,-10,10,10" />
+                    </panAndZoom:ZoomBorder>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Latest" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch"
+                     Width="Auto">
+                <Grid Background="#FFE5E5E5">
+                    <panAndZoom:ZoomBorder ClipToBounds="True" Background="Gray">
+                        <Image x:Name="LabaDiena" Margin="0,-10,10,10" />
+                    </panAndZoom:ZoomBorder>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Difference" HorizontalAlignment="Stretch" Height="Auto" VerticalAlignment="Stretch"
+                     Width="Auto">
+                <Grid Background="#FFE5E5E5">
+                    <panAndZoom:ZoomBorder ClipToBounds="True" Background="Gray">
+                        <Image x:Name="LabasVakaras" Margin="0,-10,10,10" />
+                    </panAndZoom:ZoomBorder>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
